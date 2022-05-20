@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "firstname": "Juan Romero",
+      "email": "romero@gmail.com",
+      "phone": "999478145",
+      "enterprise": "ROMERO.SAC",
+      "notes": "Pedido de Racks Torito",
+      "id": 1
+    },
+    {
+      "firstname": "Luis",
+      "email": "luis@correo.com",
+      "phone": "990778512",
+      "enterprise": "Concepcion SAC",
+      "notes": "Nueva contización de pedido",
+      "id": 2
+    },
+    {
+      "firstname": "Maria",
+      "email": "maria@correo.com",
+      "phone": "",
+      "enterprise": "Nova SA",
+      "notes": "",
+      "id": 4
+    }
+  ]
+}
