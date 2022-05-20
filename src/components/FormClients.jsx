@@ -30,7 +30,7 @@ const FormClients = ({client, loading}) => {
       let response
       if (client.id) {
         // Editar un cliente
-        const url = `http://localhost:4000/clientes/${client.id}`
+        const url = `${import.meta.env.VITE_API_URL}/${client.id}`
         response = await fetch(url, {
           method: 'PUT',
           headers: {
@@ -40,7 +40,7 @@ const FormClients = ({client, loading}) => {
         })
       } else {
         // Agregar nuevo cliente
-        const url = 'http://localhost:4000/clientes'    
+        const url = `${import.meta.env.VITE_API_URL}`    
         response = await fetch(url, {
           method: 'POST',
           headers: {
@@ -176,7 +176,7 @@ const FormClients = ({client, loading}) => {
                   </div>
                   <input 
                     type="submit" 
-                    value="Agregar Cliente"
+                    value={client?.firstname ? 'Editar Cliente' : 'Agregar Cliente'}
                     className="mt-5 w-full bg-blue-800 p-3 text-white uppercase font-bold text-lg"
                   />
                 </Form>
